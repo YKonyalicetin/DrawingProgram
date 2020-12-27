@@ -60,6 +60,7 @@ namespace DrawingProgram
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnRedo = new System.Windows.Forms.Button();
             this.BtnUndo = new System.Windows.Forms.Button();
+            this.ColorDB = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.PbSurface)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,6 +79,9 @@ namespace DrawingProgram
             this.PbSurface.Size = new System.Drawing.Size(630, 420);
             this.PbSurface.TabIndex = 0;
             this.PbSurface.TabStop = false;
+            this.PbSurface.Paint += new System.Windows.Forms.PaintEventHandler(this.PbSurface_Paint);
+            this.PbSurface.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PbSurface_MouseDown);
+            this.PbSurface.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PbSurface_MouseUp);
             // 
             // groupBox1
             // 
@@ -101,6 +105,7 @@ namespace DrawingProgram
             this.btnRunningMan.Size = new System.Drawing.Size(64, 64);
             this.btnRunningMan.TabIndex = 5;
             this.btnRunningMan.UseVisualStyleBackColor = true;
+            this.btnRunningMan.Click += new System.EventHandler(this.btnRunningMan_Click);
             // 
             // btnStickWoman
             // 
@@ -110,6 +115,7 @@ namespace DrawingProgram
             this.btnStickWoman.Size = new System.Drawing.Size(64, 64);
             this.btnStickWoman.TabIndex = 4;
             this.btnStickWoman.UseVisualStyleBackColor = true;
+            this.btnStickWoman.Click += new System.EventHandler(this.btnStickWoman_Click);
             // 
             // btnArmsDown
             // 
@@ -119,6 +125,7 @@ namespace DrawingProgram
             this.btnArmsDown.Size = new System.Drawing.Size(64, 64);
             this.btnArmsDown.TabIndex = 3;
             this.btnArmsDown.UseVisualStyleBackColor = true;
+            this.btnArmsDown.Click += new System.EventHandler(this.btnArmsDown_Click);
             // 
             // btnArmsUp
             // 
@@ -128,6 +135,7 @@ namespace DrawingProgram
             this.btnArmsUp.Size = new System.Drawing.Size(64, 64);
             this.btnArmsUp.TabIndex = 2;
             this.btnArmsUp.UseVisualStyleBackColor = true;
+            this.btnArmsUp.Click += new System.EventHandler(this.btnArmsUp_Click);
             // 
             // btnArmsStraight
             // 
@@ -137,6 +145,7 @@ namespace DrawingProgram
             this.btnArmsStraight.Size = new System.Drawing.Size(64, 64);
             this.btnArmsStraight.TabIndex = 1;
             this.btnArmsStraight.UseVisualStyleBackColor = true;
+            this.btnArmsStraight.Click += new System.EventHandler(this.btnArmsStraight_Click);
             // 
             // groupBox2
             // 
@@ -176,6 +185,7 @@ namespace DrawingProgram
             this.BtnCustomColor.TabIndex = 7;
             this.BtnCustomColor.Text = "Custom";
             this.BtnCustomColor.UseVisualStyleBackColor = true;
+            this.BtnCustomColor.Click += new System.EventHandler(this.BtnCustomColor_Click);
             // 
             // BtnGrey
             // 
@@ -187,6 +197,7 @@ namespace DrawingProgram
             this.BtnGrey.Size = new System.Drawing.Size(20, 20);
             this.BtnGrey.TabIndex = 6;
             this.BtnGrey.UseVisualStyleBackColor = false;
+            this.BtnGrey.Click += new System.EventHandler(this.BtnGrey_Click);
             // 
             // BtnBlack
             // 
@@ -198,6 +209,7 @@ namespace DrawingProgram
             this.BtnBlack.Size = new System.Drawing.Size(20, 20);
             this.BtnBlack.TabIndex = 5;
             this.BtnBlack.UseVisualStyleBackColor = false;
+            this.BtnBlack.Click += new System.EventHandler(this.BtnBlack_Click);
             // 
             // BtnGreen
             // 
@@ -209,6 +221,7 @@ namespace DrawingProgram
             this.BtnGreen.Size = new System.Drawing.Size(20, 20);
             this.BtnGreen.TabIndex = 4;
             this.BtnGreen.UseVisualStyleBackColor = false;
+            this.BtnGreen.Click += new System.EventHandler(this.BtnGreen_Click);
             // 
             // BtnYellow
             // 
@@ -220,6 +233,7 @@ namespace DrawingProgram
             this.BtnYellow.Size = new System.Drawing.Size(20, 20);
             this.BtnYellow.TabIndex = 3;
             this.BtnYellow.UseVisualStyleBackColor = false;
+            this.BtnYellow.Click += new System.EventHandler(this.BtnYellow_Click);
             // 
             // BtnRed
             // 
@@ -231,6 +245,7 @@ namespace DrawingProgram
             this.BtnRed.Size = new System.Drawing.Size(20, 20);
             this.BtnRed.TabIndex = 2;
             this.BtnRed.UseVisualStyleBackColor = false;
+            this.BtnRed.Click += new System.EventHandler(this.BtnRed_Click);
             // 
             // BtnBlue
             // 
@@ -242,16 +257,18 @@ namespace DrawingProgram
             this.BtnBlue.Size = new System.Drawing.Size(20, 20);
             this.BtnBlue.TabIndex = 1;
             this.BtnBlue.UseVisualStyleBackColor = false;
+            this.BtnBlue.Click += new System.EventHandler(this.BtnBlue_Click);
             // 
             // cmbColors
             // 
-            this.cmbColors.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbColors.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbColors.FormattingEnabled = true;
             this.cmbColors.Location = new System.Drawing.Point(6, 142);
             this.cmbColors.Name = "cmbColors";
-            this.cmbColors.Size = new System.Drawing.Size(291, 32);
+            this.cmbColors.Size = new System.Drawing.Size(291, 24);
             this.cmbColors.TabIndex = 0;
-            this.cmbColors.Text = "Color Selector";
+            this.cmbColors.Text = "Select a Color";
+            this.cmbColors.SelectedIndexChanged += new System.EventHandler(this.cmbColors_SelectedIndexChanged);
             // 
             // groupBox3
             // 
@@ -302,6 +319,7 @@ namespace DrawingProgram
             this.TrackBrushSize.Size = new System.Drawing.Size(283, 45);
             this.TrackBrushSize.TabIndex = 0;
             this.TrackBrushSize.Value = 5;
+            this.TrackBrushSize.Scroll += new System.EventHandler(this.TrackBrushSize_Scroll);
             // 
             // groupBox4
             // 
@@ -447,6 +465,7 @@ namespace DrawingProgram
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Button BtnRedo;
         private System.Windows.Forms.Button BtnUndo;
+        private System.Windows.Forms.ColorDialog ColorDB;
     }
 }
 
