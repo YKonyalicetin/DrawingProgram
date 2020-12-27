@@ -32,41 +32,41 @@ namespace DrawingProgram
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.PbSurface = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cmbColors = new System.Windows.Forms.ComboBox();
-            this.btnArmsStraight = new System.Windows.Forms.Button();
-            this.btnArmsUp = new System.Windows.Forms.Button();
-            this.btnArmsDown = new System.Windows.Forms.Button();
-            this.btnStickWoman = new System.Windows.Forms.Button();
             this.btnRunningMan = new System.Windows.Forms.Button();
-            this.RadioSolid = new System.Windows.Forms.RadioButton();
-            this.RadioDashed = new System.Windows.Forms.RadioButton();
-            this.BtnBlue = new System.Windows.Forms.Button();
-            this.BtnRed = new System.Windows.Forms.Button();
-            this.BtnYellow = new System.Windows.Forms.Button();
-            this.BtnGreen = new System.Windows.Forms.Button();
-            this.BtnBlack = new System.Windows.Forms.Button();
-            this.BtnGrey = new System.Windows.Forms.Button();
-            this.BtnCustomColor = new System.Windows.Forms.Button();
+            this.btnStickWoman = new System.Windows.Forms.Button();
+            this.btnArmsDown = new System.Windows.Forms.Button();
+            this.btnArmsUp = new System.Windows.Forms.Button();
+            this.btnArmsStraight = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelColor = new System.Windows.Forms.Label();
-            this.TrackBrushSize = new System.Windows.Forms.TrackBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BtnCustomColor = new System.Windows.Forms.Button();
+            this.BtnGrey = new System.Windows.Forms.Button();
+            this.BtnBlack = new System.Windows.Forms.Button();
+            this.BtnGreen = new System.Windows.Forms.Button();
+            this.BtnYellow = new System.Windows.Forms.Button();
+            this.BtnRed = new System.Windows.Forms.Button();
+            this.BtnBlue = new System.Windows.Forms.Button();
+            this.cmbColors = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.BtnUndo = new System.Windows.Forms.Button();
-            this.BtnRedo = new System.Windows.Forms.Button();
-            this.BtnSave = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TrackBrushSize = new System.Windows.Forms.TrackBar();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.RadioDashed = new System.Windows.Forms.RadioButton();
+            this.RadioSolid = new System.Windows.Forms.RadioButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.BtnClear = new System.Windows.Forms.Button();
+            this.BtnSave = new System.Windows.Forms.Button();
+            this.BtnRedo = new System.Windows.Forms.Button();
+            this.BtnUndo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbSurface)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackBrushSize)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBrushSize)).BeginInit();
             this.SuspendLayout();
             // 
             // PbSurface
@@ -93,6 +93,51 @@ namespace DrawingProgram
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Stick Figures";
             // 
+            // btnRunningMan
+            // 
+            this.btnRunningMan.BackgroundImage = global::DrawingProgram.Properties.Resources.m_running_right;
+            this.btnRunningMan.Location = new System.Drawing.Point(6, 214);
+            this.btnRunningMan.Name = "btnRunningMan";
+            this.btnRunningMan.Size = new System.Drawing.Size(64, 64);
+            this.btnRunningMan.TabIndex = 5;
+            this.btnRunningMan.UseVisualStyleBackColor = true;
+            // 
+            // btnStickWoman
+            // 
+            this.btnStickWoman.BackgroundImage = global::DrawingProgram.Properties.Resources.f_arms_straight;
+            this.btnStickWoman.Location = new System.Drawing.Point(105, 122);
+            this.btnStickWoman.Name = "btnStickWoman";
+            this.btnStickWoman.Size = new System.Drawing.Size(64, 64);
+            this.btnStickWoman.TabIndex = 4;
+            this.btnStickWoman.UseVisualStyleBackColor = true;
+            // 
+            // btnArmsDown
+            // 
+            this.btnArmsDown.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_down;
+            this.btnArmsDown.Location = new System.Drawing.Point(6, 122);
+            this.btnArmsDown.Name = "btnArmsDown";
+            this.btnArmsDown.Size = new System.Drawing.Size(64, 64);
+            this.btnArmsDown.TabIndex = 3;
+            this.btnArmsDown.UseVisualStyleBackColor = true;
+            // 
+            // btnArmsUp
+            // 
+            this.btnArmsUp.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_up;
+            this.btnArmsUp.Location = new System.Drawing.Point(105, 30);
+            this.btnArmsUp.Name = "btnArmsUp";
+            this.btnArmsUp.Size = new System.Drawing.Size(64, 64);
+            this.btnArmsUp.TabIndex = 2;
+            this.btnArmsUp.UseVisualStyleBackColor = true;
+            // 
+            // btnArmsStraight
+            // 
+            this.btnArmsStraight.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_straight;
+            this.btnArmsStraight.Location = new System.Drawing.Point(6, 30);
+            this.btnArmsStraight.Name = "btnArmsStraight";
+            this.btnArmsStraight.Size = new System.Drawing.Size(64, 64);
+            this.btnArmsStraight.TabIndex = 1;
+            this.btnArmsStraight.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.labelColor);
@@ -112,6 +157,102 @@ namespace DrawingProgram
             this.groupBox2.Text = "Colors";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // labelColor
+            // 
+            this.labelColor.AutoSize = true;
+            this.labelColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelColor.Location = new System.Drawing.Point(192, 20);
+            this.labelColor.Name = "labelColor";
+            this.labelColor.Size = new System.Drawing.Size(52, 57);
+            this.labelColor.TabIndex = 8;
+            this.labelColor.Text = "  ";
+            // 
+            // BtnCustomColor
+            // 
+            this.BtnCustomColor.Location = new System.Drawing.Point(7, 45);
+            this.BtnCustomColor.Name = "BtnCustomColor";
+            this.BtnCustomColor.Size = new System.Drawing.Size(150, 32);
+            this.BtnCustomColor.TabIndex = 7;
+            this.BtnCustomColor.Text = "Custom";
+            this.BtnCustomColor.UseVisualStyleBackColor = true;
+            // 
+            // BtnGrey
+            // 
+            this.BtnGrey.BackColor = System.Drawing.Color.Gray;
+            this.BtnGrey.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.BtnGrey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGrey.Location = new System.Drawing.Point(85, 20);
+            this.BtnGrey.Name = "BtnGrey";
+            this.BtnGrey.Size = new System.Drawing.Size(20, 20);
+            this.BtnGrey.TabIndex = 6;
+            this.BtnGrey.UseVisualStyleBackColor = false;
+            // 
+            // BtnBlack
+            // 
+            this.BtnBlack.BackColor = System.Drawing.Color.Black;
+            this.BtnBlack.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnBlack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBlack.Location = new System.Drawing.Point(111, 20);
+            this.BtnBlack.Name = "BtnBlack";
+            this.BtnBlack.Size = new System.Drawing.Size(20, 20);
+            this.BtnBlack.TabIndex = 5;
+            this.BtnBlack.UseVisualStyleBackColor = false;
+            // 
+            // BtnGreen
+            // 
+            this.BtnGreen.BackColor = System.Drawing.Color.Lime;
+            this.BtnGreen.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.BtnGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGreen.Location = new System.Drawing.Point(137, 20);
+            this.BtnGreen.Name = "BtnGreen";
+            this.BtnGreen.Size = new System.Drawing.Size(20, 20);
+            this.BtnGreen.TabIndex = 4;
+            this.BtnGreen.UseVisualStyleBackColor = false;
+            // 
+            // BtnYellow
+            // 
+            this.BtnYellow.BackColor = System.Drawing.Color.Yellow;
+            this.BtnYellow.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.BtnYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnYellow.Location = new System.Drawing.Point(59, 20);
+            this.BtnYellow.Name = "BtnYellow";
+            this.BtnYellow.Size = new System.Drawing.Size(20, 20);
+            this.BtnYellow.TabIndex = 3;
+            this.BtnYellow.UseVisualStyleBackColor = false;
+            // 
+            // BtnRed
+            // 
+            this.BtnRed.BackColor = System.Drawing.Color.Red;
+            this.BtnRed.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.BtnRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRed.Location = new System.Drawing.Point(33, 20);
+            this.BtnRed.Name = "BtnRed";
+            this.BtnRed.Size = new System.Drawing.Size(20, 20);
+            this.BtnRed.TabIndex = 2;
+            this.BtnRed.UseVisualStyleBackColor = false;
+            // 
+            // BtnBlue
+            // 
+            this.BtnBlue.BackColor = System.Drawing.Color.Blue;
+            this.BtnBlue.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.BtnBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBlue.Location = new System.Drawing.Point(7, 20);
+            this.BtnBlue.Name = "BtnBlue";
+            this.BtnBlue.Size = new System.Drawing.Size(20, 20);
+            this.BtnBlue.TabIndex = 1;
+            this.BtnBlue.UseVisualStyleBackColor = false;
+            // 
+            // cmbColors
+            // 
+            this.cmbColors.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbColors.FormattingEnabled = true;
+            this.cmbColors.Location = new System.Drawing.Point(6, 142);
+            this.cmbColors.Name = "cmbColors";
+            this.cmbColors.Size = new System.Drawing.Size(291, 32);
+            this.cmbColors.TabIndex = 0;
+            this.cmbColors.Text = "Color Selector";
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label3);
@@ -125,6 +266,43 @@ namespace DrawingProgram
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Brush Size";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(279, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(19, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "20";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(142, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(19, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "10";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(21, 55);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "1";
+            // 
+            // TrackBrushSize
+            // 
+            this.TrackBrushSize.Location = new System.Drawing.Point(15, 20);
+            this.TrackBrushSize.Maximum = 20;
+            this.TrackBrushSize.Minimum = 1;
+            this.TrackBrushSize.Name = "TrackBrushSize";
+            this.TrackBrushSize.Size = new System.Drawing.Size(283, 45);
+            this.TrackBrushSize.TabIndex = 0;
+            this.TrackBrushSize.Value = 5;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.RadioDashed);
@@ -135,6 +313,28 @@ namespace DrawingProgram
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Line Style";
+            // 
+            // RadioDashed
+            // 
+            this.RadioDashed.AutoSize = true;
+            this.RadioDashed.Location = new System.Drawing.Point(6, 51);
+            this.RadioDashed.Name = "RadioDashed";
+            this.RadioDashed.Size = new System.Drawing.Size(62, 17);
+            this.RadioDashed.TabIndex = 1;
+            this.RadioDashed.Text = "Dashed";
+            this.RadioDashed.UseVisualStyleBackColor = true;
+            // 
+            // RadioSolid
+            // 
+            this.RadioSolid.AutoSize = true;
+            this.RadioSolid.Checked = true;
+            this.RadioSolid.Location = new System.Drawing.Point(6, 19);
+            this.RadioSolid.Name = "RadioSolid";
+            this.RadioSolid.Size = new System.Drawing.Size(48, 17);
+            this.RadioSolid.TabIndex = 0;
+            this.RadioSolid.TabStop = true;
+            this.RadioSolid.Text = "Solid";
+            this.RadioSolid.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -149,223 +349,14 @@ namespace DrawingProgram
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Actions";
             // 
-            // cmbColors
+            // BtnClear
             // 
-            this.cmbColors.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbColors.FormattingEnabled = true;
-            this.cmbColors.Location = new System.Drawing.Point(6, 142);
-            this.cmbColors.Name = "cmbColors";
-            this.cmbColors.Size = new System.Drawing.Size(291, 32);
-            this.cmbColors.TabIndex = 0;
-            this.cmbColors.Text = "Color Selector";
-            // 
-            // btnArmsStraight
-            // 
-            this.btnArmsStraight.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_straight;
-            this.btnArmsStraight.Location = new System.Drawing.Point(6, 30);
-            this.btnArmsStraight.Name = "btnArmsStraight";
-            this.btnArmsStraight.Size = new System.Drawing.Size(64, 64);
-            this.btnArmsStraight.TabIndex = 1;
-            this.btnArmsStraight.UseVisualStyleBackColor = true;
-            // 
-            // btnArmsUp
-            // 
-            this.btnArmsUp.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_up;
-            this.btnArmsUp.Location = new System.Drawing.Point(105, 30);
-            this.btnArmsUp.Name = "btnArmsUp";
-            this.btnArmsUp.Size = new System.Drawing.Size(64, 64);
-            this.btnArmsUp.TabIndex = 2;
-            this.btnArmsUp.UseVisualStyleBackColor = true;
-            // 
-            // btnArmsDown
-            // 
-            this.btnArmsDown.BackgroundImage = global::DrawingProgram.Properties.Resources.m_arms_down;
-            this.btnArmsDown.Location = new System.Drawing.Point(6, 122);
-            this.btnArmsDown.Name = "btnArmsDown";
-            this.btnArmsDown.Size = new System.Drawing.Size(64, 64);
-            this.btnArmsDown.TabIndex = 3;
-            this.btnArmsDown.UseVisualStyleBackColor = true;
-            // 
-            // btnStickWoman
-            // 
-            this.btnStickWoman.BackgroundImage = global::DrawingProgram.Properties.Resources.f_arms_straight;
-            this.btnStickWoman.Location = new System.Drawing.Point(105, 122);
-            this.btnStickWoman.Name = "btnStickWoman";
-            this.btnStickWoman.Size = new System.Drawing.Size(64, 64);
-            this.btnStickWoman.TabIndex = 4;
-            this.btnStickWoman.UseVisualStyleBackColor = true;
-            // 
-            // btnRunningMan
-            // 
-            this.btnRunningMan.BackgroundImage = global::DrawingProgram.Properties.Resources.m_running_right;
-            this.btnRunningMan.Location = new System.Drawing.Point(6, 214);
-            this.btnRunningMan.Name = "btnRunningMan";
-            this.btnRunningMan.Size = new System.Drawing.Size(64, 64);
-            this.btnRunningMan.TabIndex = 5;
-            this.btnRunningMan.UseVisualStyleBackColor = true;
-            // 
-            // RadioSolid
-            // 
-            this.RadioSolid.AutoSize = true;
-            this.RadioSolid.Checked = true;
-            this.RadioSolid.Location = new System.Drawing.Point(6, 19);
-            this.RadioSolid.Name = "RadioSolid";
-            this.RadioSolid.Size = new System.Drawing.Size(48, 17);
-            this.RadioSolid.TabIndex = 0;
-            this.RadioSolid.TabStop = true;
-            this.RadioSolid.Text = "Solid";
-            this.RadioSolid.UseVisualStyleBackColor = true;
-            // 
-            // RadioDashed
-            // 
-            this.RadioDashed.AutoSize = true;
-            this.RadioDashed.Location = new System.Drawing.Point(6, 51);
-            this.RadioDashed.Name = "RadioDashed";
-            this.RadioDashed.Size = new System.Drawing.Size(62, 17);
-            this.RadioDashed.TabIndex = 1;
-            this.RadioDashed.Text = "Dashed";
-            this.RadioDashed.UseVisualStyleBackColor = true;
-            // 
-            // BtnBlue
-            // 
-            this.BtnBlue.BackColor = System.Drawing.Color.Blue;
-            this.BtnBlue.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
-            this.BtnBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBlue.Location = new System.Drawing.Point(7, 20);
-            this.BtnBlue.Name = "BtnBlue";
-            this.BtnBlue.Size = new System.Drawing.Size(20, 20);
-            this.BtnBlue.TabIndex = 1;
-            this.BtnBlue.UseVisualStyleBackColor = false;
-            // 
-            // BtnRed
-            // 
-            this.BtnRed.BackColor = System.Drawing.Color.Red;
-            this.BtnRed.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.BtnRed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRed.Location = new System.Drawing.Point(33, 20);
-            this.BtnRed.Name = "BtnRed";
-            this.BtnRed.Size = new System.Drawing.Size(20, 20);
-            this.BtnRed.TabIndex = 2;
-            this.BtnRed.UseVisualStyleBackColor = false;
-            // 
-            // BtnYellow
-            // 
-            this.BtnYellow.BackColor = System.Drawing.Color.Yellow;
-            this.BtnYellow.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
-            this.BtnYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnYellow.Location = new System.Drawing.Point(59, 20);
-            this.BtnYellow.Name = "BtnYellow";
-            this.BtnYellow.Size = new System.Drawing.Size(20, 20);
-            this.BtnYellow.TabIndex = 3;
-            this.BtnYellow.UseVisualStyleBackColor = false;
-            // 
-            // BtnGreen
-            // 
-            this.BtnGreen.BackColor = System.Drawing.Color.Lime;
-            this.BtnGreen.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.BtnGreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGreen.Location = new System.Drawing.Point(137, 20);
-            this.BtnGreen.Name = "BtnGreen";
-            this.BtnGreen.Size = new System.Drawing.Size(20, 20);
-            this.BtnGreen.TabIndex = 4;
-            this.BtnGreen.UseVisualStyleBackColor = false;
-            // 
-            // BtnBlack
-            // 
-            this.BtnBlack.BackColor = System.Drawing.Color.Black;
-            this.BtnBlack.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnBlack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBlack.Location = new System.Drawing.Point(111, 20);
-            this.BtnBlack.Name = "BtnBlack";
-            this.BtnBlack.Size = new System.Drawing.Size(20, 20);
-            this.BtnBlack.TabIndex = 5;
-            this.BtnBlack.UseVisualStyleBackColor = false;
-            // 
-            // BtnGrey
-            // 
-            this.BtnGrey.BackColor = System.Drawing.Color.Gray;
-            this.BtnGrey.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.BtnGrey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGrey.Location = new System.Drawing.Point(85, 20);
-            this.BtnGrey.Name = "BtnGrey";
-            this.BtnGrey.Size = new System.Drawing.Size(20, 20);
-            this.BtnGrey.TabIndex = 6;
-            this.BtnGrey.UseVisualStyleBackColor = false;
-            // 
-            // BtnCustomColor
-            // 
-            this.BtnCustomColor.Location = new System.Drawing.Point(7, 45);
-            this.BtnCustomColor.Name = "BtnCustomColor";
-            this.BtnCustomColor.Size = new System.Drawing.Size(150, 32);
-            this.BtnCustomColor.TabIndex = 7;
-            this.BtnCustomColor.Text = "Custom";
-            this.BtnCustomColor.UseVisualStyleBackColor = true;
-            // 
-            // labelColor
-            // 
-            this.labelColor.AutoSize = true;
-            this.labelColor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelColor.Location = new System.Drawing.Point(192, 20);
-            this.labelColor.Name = "labelColor";
-            this.labelColor.Size = new System.Drawing.Size(52, 57);
-            this.labelColor.TabIndex = 8;
-            this.labelColor.Text = "  ";
-            // 
-            // TrackBrushSize
-            // 
-            this.TrackBrushSize.Location = new System.Drawing.Point(15, 20);
-            this.TrackBrushSize.Maximum = 20;
-            this.TrackBrushSize.Minimum = 1;
-            this.TrackBrushSize.Name = "TrackBrushSize";
-            this.TrackBrushSize.Size = new System.Drawing.Size(283, 45);
-            this.TrackBrushSize.TabIndex = 0;
-            this.TrackBrushSize.Value = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(142, 55);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(19, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "10";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(279, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(19, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "20";
-            // 
-            // BtnUndo
-            // 
-            this.BtnUndo.Location = new System.Drawing.Point(7, 32);
-            this.BtnUndo.Name = "BtnUndo";
-            this.BtnUndo.Size = new System.Drawing.Size(175, 23);
-            this.BtnUndo.TabIndex = 0;
-            this.BtnUndo.Text = "Undo";
-            this.BtnUndo.UseVisualStyleBackColor = true;
-            // 
-            // BtnRedo
-            // 
-            this.BtnRedo.Location = new System.Drawing.Point(7, 77);
-            this.BtnRedo.Name = "BtnRedo";
-            this.BtnRedo.Size = new System.Drawing.Size(175, 23);
-            this.BtnRedo.TabIndex = 1;
-            this.BtnRedo.Text = "Redo";
-            this.BtnRedo.UseVisualStyleBackColor = true;
+            this.BtnClear.Location = new System.Drawing.Point(7, 168);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(175, 23);
+            this.BtnClear.TabIndex = 3;
+            this.BtnClear.Text = "Clear Surface";
+            this.BtnClear.UseVisualStyleBackColor = true;
             // 
             // BtnSave
             // 
@@ -376,14 +367,23 @@ namespace DrawingProgram
             this.BtnSave.Text = "Save Image";
             this.BtnSave.UseVisualStyleBackColor = true;
             // 
-            // BtnClear
+            // BtnRedo
             // 
-            this.BtnClear.Location = new System.Drawing.Point(7, 168);
-            this.BtnClear.Name = "BtnClear";
-            this.BtnClear.Size = new System.Drawing.Size(175, 23);
-            this.BtnClear.TabIndex = 3;
-            this.BtnClear.Text = "Clear Surface";
-            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnRedo.Location = new System.Drawing.Point(7, 77);
+            this.BtnRedo.Name = "BtnRedo";
+            this.BtnRedo.Size = new System.Drawing.Size(175, 23);
+            this.BtnRedo.TabIndex = 1;
+            this.BtnRedo.Text = "Redo";
+            this.BtnRedo.UseVisualStyleBackColor = true;
+            // 
+            // BtnUndo
+            // 
+            this.BtnUndo.Location = new System.Drawing.Point(7, 32);
+            this.BtnUndo.Name = "BtnUndo";
+            this.BtnUndo.Size = new System.Drawing.Size(175, 23);
+            this.BtnUndo.TabIndex = 0;
+            this.BtnUndo.Text = "Undo";
+            this.BtnUndo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -400,16 +400,17 @@ namespace DrawingProgram
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stick Figure Draw";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbSurface)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackBrushSize)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.TrackBrushSize)).EndInit();
             this.ResumeLayout(false);
 
         }
