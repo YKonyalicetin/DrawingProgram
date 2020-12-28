@@ -61,6 +61,7 @@ namespace DrawingProgram
             this.BtnRedo = new System.Windows.Forms.Button();
             this.BtnUndo = new System.Windows.Forms.Button();
             this.ColorDB = new System.Windows.Forms.ColorDialog();
+            this.SaveDB = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.PbSurface)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -341,6 +342,7 @@ namespace DrawingProgram
             this.RadioDashed.TabIndex = 1;
             this.RadioDashed.Text = "Dashed";
             this.RadioDashed.UseVisualStyleBackColor = true;
+            this.RadioDashed.Click += new System.EventHandler(this.RadioDashed_Click);
             // 
             // RadioSolid
             // 
@@ -353,6 +355,7 @@ namespace DrawingProgram
             this.RadioSolid.TabStop = true;
             this.RadioSolid.Text = "Solid";
             this.RadioSolid.UseVisualStyleBackColor = true;
+            this.RadioSolid.Click += new System.EventHandler(this.RadioSolid_Click);
             // 
             // groupBox5
             // 
@@ -375,6 +378,7 @@ namespace DrawingProgram
             this.BtnClear.TabIndex = 3;
             this.BtnClear.Text = "Clear Surface";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // BtnSave
             // 
@@ -384,6 +388,7 @@ namespace DrawingProgram
             this.BtnSave.TabIndex = 2;
             this.BtnSave.Text = "Save Image";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnRedo
             // 
@@ -393,6 +398,7 @@ namespace DrawingProgram
             this.BtnRedo.TabIndex = 1;
             this.BtnRedo.Text = "Redo";
             this.BtnRedo.UseVisualStyleBackColor = true;
+            this.BtnRedo.Click += new System.EventHandler(this.BtnRedo_Click);
             // 
             // BtnUndo
             // 
@@ -402,6 +408,14 @@ namespace DrawingProgram
             this.BtnUndo.TabIndex = 0;
             this.BtnUndo.Text = "Undo";
             this.BtnUndo.UseVisualStyleBackColor = true;
+            this.BtnUndo.Click += new System.EventHandler(this.BtnUndo_Click);
+            // 
+            // SaveDB
+            // 
+            this.SaveDB.DefaultExt = "png";
+            this.SaveDB.Filter = "Png|*.png";
+            this.SaveDB.InitialDirectory = "Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)";
+            this.SaveDB.FileOk += new System.ComponentModel.CancelEventHandler(this.SaveDB_FileOk);
             // 
             // Form1
             // 
@@ -466,6 +480,7 @@ namespace DrawingProgram
         private System.Windows.Forms.Button BtnRedo;
         private System.Windows.Forms.Button BtnUndo;
         private System.Windows.Forms.ColorDialog ColorDB;
+        private System.Windows.Forms.SaveFileDialog SaveDB;
     }
 }
 
